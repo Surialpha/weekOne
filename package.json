@@ -4,7 +4,7 @@
   "description": "Proyect to Cousera.org ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "lite-server index.html"
   },
   "repository": {
     "type": "git",
@@ -16,7 +16,11 @@
     "url": "https://github.com/Surialpha/weekOne/issues"
   },
   "homepage": "https://github.com/Surialpha/weekOne#readme",
-  "dependencies": {},
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1",
+    "poppers.js": "^1.16.1"
+  },
   "devDependencies": {
     "lite-server": "^2.5.4"
   }
