@@ -1,112 +1,222 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WeekOne</title>
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./styles.css">
+    <link href="./node_modules/open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
 </head>
+
 <body>
-    <div class="jumbotron jumbotron-fluid" id="Header" >
-        <div class="container">
-          <h1 class="display-4">Portafolio de viajes</h1>
-          <p class="lead">En esta pagina podras encontrar nuestro portafolio más reciente de viajes y así poder revervar alguno.</p>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary position-sticky fixed-top">
+        <a class="navbar-brand" href="./index.html"><span class="oi oi-compass"></span> App Reservas </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="./index.html">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/precios.html">Precios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
         </div>
-      </div>
+      </nav>
 
-      <div class="container ">
-          <div class="row text-center">
-            <div class="col-lg-4 col-md-4 col-sm-12">
-                <h2>Panáca</h2>
-                <p>is a farming theme park that promotes contact between humans and nature,
-                     intended for those who live in the city and to create awareness about nature. 
-                     The park was created in Quimbaya, in the Coffee Area of Colombia by a group of 
-                     businessmen in 1990, and today, is one of the biggest agricultural parks in the country.</p>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-12">
-                <h2>Madrid</h2>
-                <p>Madrid, Spain's central capital, is a city of elegant boulevards and expansive,
-                     manicured parks such as the Buen Retiro. It’s renowned for its rich repositories of European art, 
-                     including the Prado Museum’s works by Goya, Velázquez and other Spanish masters. 
-                     The heart of old Hapsburg Madrid is the portico-lined Plaza Mayor, 
-                     and nearby is the baroque Royal Palace and Armory, displaying historic weaponry.</p>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-12">
-                <h2>Líma</h2>
-                <p>Lima, the capital of Peru, lies on the country's arid Pacific coast. 
-                    Though its colonial center is preserved, it's a bustling metropolis and one of South America’s largest cities. 
-                    It's home to the Museo Larco collection of pre-Columbian art and the Museo de la Nación, tracing the history of Peru’s ancient civilizations. 
-                    The Plaza de Armas and the 16th-century cathedral are the heart of old Lima Centro.</p>
-            </div>
-          </div>
+    <div class="jumbotron jumbotron-fluid" id="Header">
+        <div class="container " id="subHeader">
+            <h1 class="display-4">Portafolio de viajes</h1>
+            <p class="lead">En esta pagina podras encontrar nuestro portafolio más reciente de viajes y así poder
+                revervar alguno.</p>
+        </div>
+    </div>
+    <nav class="mt-n5" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="./index.html">Inicio</a></li>
+        </ol>
+      </nav>
 
-          <div class="d-lg-flex  d-md-flex d-sm-block pt-5 text-center">
-            <div class="Listado">
-                <h4>Viaja a Cali</h4>
-                <p>Un gran viaje te espera a borde de este magico lugar, 
-                    hospedate en el hotel Coursera y visita las lindas playas</p>
-                <input type="button" value="reservar" class="btn ListadoBotones">
+     
+
+    <div class="container ">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+
+                <div class="card" style="width: 100%;">
+                    <img src="https://i.picsum.photos/id/584/2507/1674.jpg?hmac=yftDWdRpaPLgb4vBEMUrHGnSfJwsqEuuEsddUHeCXgQ" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Panáca</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Amazing place</h6>
+                      <p class="card-text">is a farming theme park that promotes contact between humans and nature,
+                        intended for those who live in the city and to create awareness about nature.
+                        The park was created in Quimbaya, in the Coffee Area of Colombia by a group of
+                        businessmen in 1990, and today, is one of the biggest agricultural parks in the country.</p>
+                    </div>
+                  </div>
             </div>
-            <div class="Listado">
-                <h4>Viaja a Bogotá</h4>
-                <p>Un gran viaje te espera a borde de este magico lugar, 
-                    hospedate en el hotel Coursera y visita las lindas calles</p>
-                <input type="button" value="reservar" class="btn ListadoBotones">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+
+
+                <div class="card" style="width: 100%;">
+                    <img src="https://i.picsum.photos/id/1048/5616/3744.jpg?hmac=N5TZKe4gtmf4hU8xRs-zbS4diYiO009Jni7n50609zk" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Madrid</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Great place</h6>
+                      <p class="card-text">Madrid, Spain's central capital, is a city of elegant boulevards and expansive,
+                        manicured parks such as the Buen Retiro. It’s renowned for its rich repositories of European art,
+                        including the Prado Museum’s works by Goya, Velázquez and other Spanish masters.
+                        The heart of old Hapsburg Madrid is the portico-lined Plaza Mayor.</p>
+                    </div>
+                  </div>
             </div>
-            <div class="Listado">
-                <h4>Viaja a Medellín</h4>
-                <p>Un gran viaje te espera a borde de este magico lugar, 
-                    hospedate en el hotel Coursera y visita los bellos barrios</p>
-                <input type="button" value="reservar" class="btn ListadoBotones">
-            </div>
-            <div class="Listado">
-                <h4>Viaja a Cartagena</h4>
-                <p>Un gran viaje te espera a borde de este magico lugar, 
-                    hospedate en el hotel Coursera y visita la hermosa muralla</p>
-                <input type="button" value="reservar" class="btn ListadoBotones">
-            </div>
-            <div class="Listado">
-                <h4>Viaja a Nariño</h4>
-                <p>Un gran viaje te espera a borde de este magico lugar, 
-                    hospedate en el hotel Coursera y visita las bellas montañas</p>
-                <input type="button" value="reservar" class="btn ListadoBotones">
-            </div>
-            <div class="Listado">
-                <h4>Viaja a Tunja</h4>
-                <p>Un gran viaje te espera a borde de este magico lugar, 
-                    hospedate en el hotel Coursera y recorre mientras conoces gente linda</p>
-                <input type="button" value="reservar" class="btn ListadoBotones">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+
+                <div class="card" style="width: 100%;">
+                    <img src="https://i.picsum.photos/id/1056/3988/2720.jpg?hmac=qX6hO_75zxeYI7C-1TOspJ0_bRDbYInBwYeoy_z_h08" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Líma</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Beautiful place</h6>
+                      <p class="card-text">Lima, the capital of Peru, lies on the country's arid Pacific coast.
+                        Though its colonial center is preserved, it's a bustling metropolis and one of South America’s
+                        largest cities.
+                        It's home to the Museo Larco collection of pre-Columbian art and the Museo de la Nación, tracing the
+                        history of Peru’s ancient civilizations.
+                        The Plaza de Armas.</p>
+                    </div>
+                  </div>
             </div>
         </div>
-        
-      </div>
 
-      <footer class="pt-5">
+        <div class="d-lg-flex  d-md-flex d-sm-block pt-5 text-center">
+            <div class="Listado">
+
+                <div class="card" style="width: 100%;height: 100%;">
+                    <img src="https://picsum.photos/250/100" class="card-img-top" alt="...">
+                    <div class="card-body otraCss">
+                      <h5 class="card-title">Viaja a Cali</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Playa</h6>
+                      <p class="card-text">Un gran viaje te espera a borde de este magico lugar,
+                        hospedate en el hotel Coursera y visita las lindas playas</p>
+                        <button type="button" value='reservar' class="btn ListadoBotones">Reservar <span class="oi oi-share-boxed"></span></button>
+                        
+                    </div>
+                  </div>
+            </div>
+            <div class="Listado">
+
+                <div class="card" style="width: 100%;height: 100%;">
+                    <img src="https://picsum.photos/250/100" class="card-img-top" alt="...">
+                    <div class="card-body otraCss">
+                      <h5 class="card-title">Viaja a Bogotá</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Ciudad</h6>
+                      <p class="card-text">Un gran viaje te espera a borde de este magico lugar,
+                        hospedate en el hotel Coursera y visita las lindas calles</p>
+                        <button type="button" value='reservar' class="btn ListadoBotones">Reservar <span class="oi oi-share-boxed"></span></button>
+                        
+                    </div>
+                  </div>
+            </div>
+            <div class="Listado">
+
+                <div class="card" style="width: 100%;height: 100%;">
+                    <img src="https://picsum.photos/250/100" class="card-img-top" alt="...">
+                    <div class="card-body otraCss">
+                      <h5 class="card-title">Viaja a Medellín</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Ciudad</h6>
+                      <p class="card-text">Un gran viaje te espera a borde de este magico lugar,
+                        hospedate en el hotel Coursera y visita los bellos barrios</p>
+                        <button type="button" value='reservar' class="btn ListadoBotones">Reservar <span class="oi oi-share-boxed"></span></button>
+                        
+                    </div>
+                  </div>
+            </div>
+            <div class="Listado">
+
+
+                <div class="card" style="width: 100%;height: 100%;">
+                    <img src="https://picsum.photos/250/100" class="card-img-top" alt="...">
+                    <div class="card-body otraCss">
+                      <h5 class="card-title">Viaja a Cartagena</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Playa</h6>
+                      <p class="card-text">Un gran viaje te espera a borde de este magico lugar,
+                        hospedate en el hotel Coursera y visita la hermosa muralla</p>
+                        <button type="button" value='reservar' class="btn ListadoBotones">Reservar <span class="oi oi-share-boxed"></span></button>
+                        
+                    </div>
+                  </div>
+            </div>
+            <div class="Listado">
+
+                <div class="card" style="width: 100%;height: 100%;">
+                    <img src="https://picsum.photos/250/100" class="card-img-top" alt="...">
+                    <div class="card-body otraCss">
+                      <h5 class="card-title">Viaja a Nariño</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Montaña</h6>
+                      <p class="card-text">Un gran viaje te espera a borde de este magico lugar,
+                        hospedate en el hotel Coursera y visita las bellas montañas</p>
+                        <button type="button" value='reservar' class="btn ListadoBotones">Reservar <span class="oi oi-share-boxed"></span></button>
+                        
+                    </div>
+                  </div>
+            </div>
+            <div class="Listado">
+
+
+                <div class="card" style="width: 100%;height: 100%;">
+                    <img src="https://picsum.photos/250/100" class="card-img-top" alt="...">
+                    <div class="card-body otraCss">
+                      <h5 class="card-title">Viaja a Tunja</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Pueblo</h6>
+                      <p class="card-text">Un gran viaje te espera a borde de este magico lugar,
+                        hospedate en el hotel Coursera y recorre mientras conoces gente linda</p>
+                        <button type="button" value='reservar' class="btn ListadoBotones">Reservar <span class="oi oi-share-boxed"></span></button>
+                        
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <footer class="pt-5">
         <div class="card">
             <div class="card-header bg-primary">
             </div>
             <div class="card-body text-center text-dark" id="Footer">
-              <blockquote class="blockquote mb-0">
-                <p>Para mayores informes por favor no dude en comunicaste con nosotros, la razón para nosotros trabajar, es usted.</p>
-                <footer class="blockquote-footer d-flex flex-column justify-content-center align-content-center"> 
-                    <address>
-                        <strong>Direcciones:</strong> Avenida siempre viva #55 sur 44
-                    </address> 
-                    <address>
-                        <strong>Telefonos:</strong>555-55-55
-                    </address> 
-                    <address>
-                        <strong>Email:</strong>coursera@tours.com
-                    </address> 
-                </footer>
-              </blockquote>
+                <blockquote class="blockquote mb-0">
+                    <p>Para mayores informes por favor no dude en comunicaste con nosotros, la razón para nosotros
+                        trabajar, es usted.</p>
+                    <footer class="blockquote-footer d-flex flex-column justify-content-center align-content-center">
+                        <address>
+                            <strong>Direcciones:</strong> Avenida siempre viva #55 sur 44
+                        </address>
+                        <address>
+                            <strong>Telefonos:</strong>555-55-55
+                        </address>
+                        <address>
+                            <strong>Email:</strong>coursera@tours.com
+                        </address>
+                    </footer>
+                </blockquote>
             </div>
-          </div>
-      </footer>
-    
+        </div>
+    </footer>
+
+
 </body>
 <script src="./node_modules/jquery/dist/jquery.min.js"></script>
 <script src="./node_modules/poppers.js/dist/umd/popper.min.js"></script>
-<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js">
+$('.toast').toast(option)</script>
+
 </html>
